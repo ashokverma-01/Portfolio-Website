@@ -2,7 +2,7 @@ import React from "react";
 import { useState, useEffect } from "react";
 import { PiStarOfDavid } from "react-icons/pi";
 import "./About.css";
-import AboutImage from "../../assets/aboutimage.png";
+import AboutImage from "../../assets/aboutImage.png";
 import { LiaFacebook } from "react-icons/lia";
 import { SlSocialTwitter } from "react-icons/sl";
 import { CiLinkedin } from "react-icons/ci";
