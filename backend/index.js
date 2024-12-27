@@ -19,7 +19,11 @@ connectDB();
 
 // Middleware
 app.use(express.json());
-app.use(cors());
+const coreOptions = {
+  origin: "https://portfolio-website-wrmk.onrender.com",
+  credentials: "true",
+};
+app.use(cors(coreOptions));
 
 // Routes
 app.use("/api", userRoutes);
