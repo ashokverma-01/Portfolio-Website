@@ -20,7 +20,7 @@ connectDB();
 // Middleware
 app.use(express.json());
 const coreOptions = {
-  origin: "https://portfolio-website-hqf0.onrender.com",
+  origin: "https://portfolio-website-74ap.onrender.com",
   credentials: "true",
 };
 app.use(cors(coreOptions));

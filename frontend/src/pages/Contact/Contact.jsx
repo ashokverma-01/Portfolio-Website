@@ -27,7 +27,7 @@ const Contact = () => {
     onSubmit: async (values, { resetForm }) => {
       try {
         const response = await axios.post(
-          "https://https://portfolio-website-hqf0.onrender.com/api/users",
+          "https://portfolio-website-74ap.onrender.com/api/users",
           values
         );
         ShowToast("User Comment successfully", Severty.SUCCESS);
