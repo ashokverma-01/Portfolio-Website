@@ -1,0 +1,139 @@
+.contact {
+  color: white;
+  padding-top: 50px;
+  text-align: center;
+  width: 100%;
+  height: 200px;
+  background-color: black;
+}
+.contact h1 {
+  font-size: 45px;
+  font-weight: 700;
+}
+.contact span {
+  font-size: 20px;
+  font-weight: 500;
+  font-style: italic;
+  cursor: pointer;
+}
+.main-contact {
+  width: 100%;
+  height: auto;
+  background-color: black;
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-evenly;
+  padding: 20px;
+  flex-wrap: wrap; /* Allows items to wrap on smaller screens */
+}
+.contact1,
+.contact2 {
+  background-color: rgb(26, 26, 28);
+  border-radius: 10px;
+  padding: 50px;
+  margin: 10px;
+  box-sizing: border-box;
+  width: 100%;
+  max-width: 600px; /* Ensures proper width on larger screens */
+}
+.contact1-form {
+  color: white;
+  width: 100%;
+}
+.contact1-form h2 {
+  font-weight: 700;
+}
+.contact1-form input,
+.contact1-form textarea {
+  width: 100%;
+  padding: 15px;
+  margin-bottom: 15px;
+  border: 0.1px solid #575757;
+  border-radius: 4px;
+  font-size: 1em;
+  box-sizing: border-box;
+  transition: border 0.3s;
+  background-color: black;
+  color: white;
+}
+.contact1-form input:focus,
+.contact1-form textarea:focus {
+  border-color: white;
+  outline: none;
+}
+.contact1-form textarea {
+  resize: vertical;
+  height: 100px;
+}
+.contact1-form button {
+  width: 100%;
+  background-color: #c9f31d;
+  color: black;
+  border: none;
+  padding: 15px;
+  border-radius: 4px;
+  font-size: 1em;
+  cursor: pointer;
+  transition: background-color 0.3s;
+  margin-top: 30px;
+}
+.contact1-form button:hover {
+  background-color: aqua;
+  color: black;
+}
+.feel {
+  color: white;
+}
+.email-feel {
+  background-color: #28292a;
+  margin-top: 30px;
+  padding: 20px;
+  color: white;
+  border-radius: 10px;
+}
+.email-feel label {
+  color: #929395;
+}
+.email-feel h5 {
+  margin-top: 10px;
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+  .contact h1 {
+    font-size: 35px;
+  }
+  .contact span {
+    font-size: 16px;
+  }
+  .main-contact {
+    flex-direction: column;
+    align-items: center;
+  }
+  .contact1,
+  .contact2 {
+    width: 90%; /* Takes most of the screen on smaller devices */
+    padding: 20px;
+  }
+  .contact1-form button {
+    padding: 12px;
+  }
+}
+
+@media (max-width: 480px) {
+  .contact h1 {
+    font-size: 28px;
+  }
+  .contact span {
+    font-size: 14px;
+  }
+  .contact1-form input,
+  .contact1-form textarea {
+    padding: 10px;
+    font-size: 0.9em;
+  }
+  .contact1-form button {
+    padding: 10px;
+    font-size: 0.9em;
+  }
+}
