@@ -1,3 +1,14 @@
+.blog-container2 {
+  background-color: black;
+  height: 1620px;
+  width: 100%;
+  overflow-y: scroll;
+  position: relative;
+}
+.blog-container2::-webkit-scrollbar {
+  display: none;
+}
+
 .blog2 {
   color: white;
   padding-top: 50px;
@@ -33,10 +44,15 @@
   border-radius: 10px;
   color: white;
   cursor: pointer;
-  overflow-y: scroll;
+  /* overflow-y: scroll; */
+  overflow: hidden;
+  transition: all 0.3s ease;
 }
 .blog-left2::-webkit-scrollbar {
   display: none;
+}
+.blog-left2.active {
+  overflow-y: auto;
 }
 .blog-list2 {
   width: 100%;

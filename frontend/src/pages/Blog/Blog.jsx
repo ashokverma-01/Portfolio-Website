@@ -1,4 +1,4 @@
-import React from "react";
+import { useRef, useEffect } from "react";
 import "./Blog.css";
 import { Link } from "react-router-dom";
 import Blog1 from "../../assets/blog1.png";
@@ -14,6 +14,8 @@ import { HiOutlineSearch } from "react-icons/hi";
 import { MdOutlineWatchLater } from "react-icons/md";
 
 const Blog = () => {
+  const blogContainerRef = useRef(null);
+  const blogLeftRef = useRef(null);
   const scrollToTop1 = () => {
     const scrollableDiv = document.querySelector(".blog-left");
     scrollableDiv.scrollTo({
@@ -37,10 +39,35 @@ const Blog = () => {
       behavior: "smooth",
     });
   };
+  useEffect(() => {
+    const blogContainer = blogContainerRef.current;
+    const blogLeft = blogLeftRef.current;
+
+    const handleScroll = () => {
+      if (blogContainer.scrollTop >= 130) {
+        blogLeft.classList.add("active"); // Enable inner scroll
+      } else {
+        blogLeft.classList.remove("active"); // Disable inner scroll
+      }
+    };
+
+    if (blogContainer && blogLeft) {
+      blogContainer.addEventListener("scroll", handleScroll);
+    } else {
+      console.error(
+        "Element(s) not found: Check .blog-container or .blog-left in your JSX."
+      );
+    }
+
+    // Cleanup event listener on component unmount
+    return () => {
+      blogContainer?.removeEventListener("scroll", handleScroll);
+    };
+  }, []);
 
   return (
     <>
-      <div className="blog-container">
+      <div className="blog-container" ref={blogContainerRef}>
         <div className="blog">
           <div>
             <h1 style={{ color: "white" }}>Blog Standard</h1>
@@ -60,7 +87,7 @@ const Blog = () => {
           </div>
         </div>
         <div className="blog-main">
-          <div className="blog-left">
+          <div className="blog-left" ref={blogLeftRef}>
             <div className="blog-list">
               <div>
                 <img src={Blog1} />

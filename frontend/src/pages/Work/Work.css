@@ -58,6 +58,12 @@
   padding-right: 100px;
   cursor: pointer;
 }
+
+.image-container img {
+  width: 100%;
+  height: auto;
+  border-bottom: 1px solid #ddd;
+}
 .p-I {
   width: 47%;
   height: 700px;
@@ -87,11 +93,11 @@
   /* margin-top: -100px; */
   width: 100%;
   height: auto;
-  background-color: black;
+  /* background-color: black; */
   display: flex;
   align-items: center;
   justify-content: center;
-  /* padding-top: 10px; */
+  padding-top: 30px;
   padding-bottom: 30px;
 }
 .more {
@@ -141,13 +147,16 @@
   height: 100vh;
   background-color: black;
   display: flex;
-  /* margin-top: 50px; */
+  padding-top: 50px;
+  padding-left: 50px;
+  padding-right: 50px;
 }
 .project1 {
   width: 50%;
   height: 90vh;
   background-color: rgb(25, 24, 24);
   padding-left: 80px;
+  border-radius: 10px;
 }
 .project2 {
   width: 50%;
@@ -156,6 +165,7 @@
   display: flex;
   align-items: center;
   justify-content: center;
+  border-radius: 10px;
 }
 .together {
   width: 100%;
@@ -214,4 +224,118 @@
   display: flex;
   align-items: center;
   justify-content: center;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .p-I {
+    max-width: 90%;
+  }
+
+  .product-heading {
+    font-size: 18px;
+  }
+}
+
+@media (max-width: 480px) {
+  .i-foot {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .arrow-w {
+    margin-top: 10px;
+    align-self: flex-end;
+  }
+
+  .product-title {
+    font-size: 12px;
+  }
+
+  .product-heading {
+    font-size: 16px;
+  }
+}
+/* 🟢 Mobile Devices (max-width: 768px) */
+@media (max-width: 768px) {
+  .project-b {
+    flex-direction: column;
+    text-align: center;
+    gap: 30px;
+  }
+
+  .project1 {
+    gap: 15px;
+  }
+
+  .together {
+    justify-content: center;
+  }
+
+  #fix .fixed h1 {
+    font-size: 1.5rem;
+  }
+
+  .email2 {
+    justify-content: center;
+    gap: 15px;
+  }
+
+  .email-icon {
+    width: 40px;
+    height: 40px;
+  }
+
+  .email2 h5 {
+    font-size: 0.8rem;
+  }
+
+  .email2 p {
+    font-size: 0.9rem;
+  }
+
+  .project2 {
+    display: flex;
+    justify-content: center;
+  }
+
+  .project2 img {
+    width: 100%;
+    max-width: 320px;
+  }
+}
+
+/* 🟡 Tablets (769px - 1024px) */
+@media (min-width: 769px) and (max-width: 1024px) {
+  .project-b {
+    gap: 30px;
+  }
+
+  #fix .fixed h1 {
+    font-size: 1.8rem;
+  }
+
+  .email-icon {
+    width: 45px;
+    height: 45px;
+  }
+
+  .email2 p {
+    font-size: 0.95rem;
+  }
+}
+
+/* 🔵 Desktops (min-width: 1025px) */
+@media (min-width: 1025px) {
+  .project-b {
+    gap: 40px;
+  }
+
+  #fix .fixed h1 {
+    font-size: 2.2rem;
+  }
+
+  .email2 p {
+    font-size: 1rem;
+  }
 }

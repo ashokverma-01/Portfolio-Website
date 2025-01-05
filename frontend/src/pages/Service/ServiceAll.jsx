@@ -261,9 +261,9 @@ const ServiceAll = () => {
               <ul>
                 <li>Web Development</li>
                 <li>Mobile Development</li>
-                <li>Web Development</li>
-                <li>Mobile Development</li>
-                <li>Web Development</li>
+                <li>Advetising</li>
+                <li>Graphic Design</li>
+                <li>Project Management</li>
                 <li>Mobile Development</li>
               </ul>
             </div>
@@ -280,7 +280,7 @@ const ServiceAll = () => {
               />
             </div>
             <div className="basic2">
-              <h3>Basic Plan</h3>
+              <h3>Ultra Plan</h3>
             </div>
             <div className="month2">
               <div>
@@ -296,9 +296,9 @@ const ServiceAll = () => {
               <ul>
                 <li>Web Development</li>
                 <li>Mobile Development</li>
-                <li>Web Development</li>
-                <li>Mobile Development</li>
-                <li>Web Development</li>
+                <li>Advetising</li>
+                <li>Graphic Design</li>
+                <li>Project Management</li>
                 <li>Mobile Development</li>
               </ul>
             </div>
@@ -313,7 +313,7 @@ const ServiceAll = () => {
               <GrSettingsOption style={{ fontSize: "50px" }} />
             </div>
             <div className="basic">
-              <h3>Basic Plan</h3>
+              <h3>Gold Plan</h3>
             </div>
             <div className="month">
               <div>
@@ -329,9 +329,9 @@ const ServiceAll = () => {
               <ul>
                 <li>Web Development</li>
                 <li>Mobile Development</li>
-                <li>Web Development</li>
-                <li>Mobile Development</li>
-                <li>Web Development</li>
+                <li>Advetising</li>
+                <li>Graphic Design</li>
+                <li>Project Management</li>
                 <li>Mobile Development</li>
               </ul>
             </div>

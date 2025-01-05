@@ -115,7 +115,7 @@ const WorkPort = () => {
       {/* All Page */}
       {showAll && (
         <>
-          <div className="p-images">
+          <div className="p-images2">
             <div className="p-I">
               <img src={BrandImage} />
               <div className="i-foot">
@@ -145,7 +145,7 @@ const WorkPort = () => {
               </div>
             </div>
           </div>
-          <div className="p-images">
+          <div className="p-images2">
             <div className="p-I">
               <img src={BrandImage4} />
               <div className="i-foot">
@@ -175,7 +175,7 @@ const WorkPort = () => {
               </div>
             </div>
           </div>
-          <div className="p-images">
+          <div className="p-images2">
             <div className="p-I">
               <img src={BrandImage2} />
               <div className="i-foot">
@@ -210,7 +210,7 @@ const WorkPort = () => {
       {/* Branding App */}
       {showBranding && (
         <>
-          <div className="p-images">
+          <div className="p-images2">
             <div className="p-I">
               <img src={BrandImage2} />
               <div className="i-foot">
@@ -245,7 +245,7 @@ const WorkPort = () => {
       {/* Loss App */}
       {showLoss && (
         <>
-          <div className="p-images">
+          <div className="p-images2">
             <div className="p-I">
               <img src={BrandImage4} />
               <div className="i-foot">
@@ -280,7 +280,7 @@ const WorkPort = () => {
       {/* Landing App */}
       {showLanding && (
         <>
-          <div className="p-images">
+          <div className="p-images2">
             <div className="p-I">
               <img src={BrandImage} />
               <div className="i-foot">
@@ -315,7 +315,7 @@ const WorkPort = () => {
       {/* Website */}
       {showWebsite && (
         <>
-          <div className="p-images">
+          <div className="p-images2">
             <div className="p-I">
               <img src={BrandImage4} />
               <div className="i-foot">

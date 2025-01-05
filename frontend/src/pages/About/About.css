@@ -187,6 +187,10 @@
   display: inline-block;
   font-weight: 800;
 }
+#moving-text3:hover .con3 {
+  animation-play-state: paused;
+  cursor: pointer;
+}
 
 @keyframes move-left {
   from {

@@ -25,30 +25,20 @@
 .touch h1:hover {
   color: rgb(7, 235, 167);
 }
-.down {
-  width: 100%;
-  margin-top: 40px;
-  display: flex;
-  justify-content: space-between;
-  flex-wrap: wrap;
-}
-.left,
+
 .right {
-  width: 48%;
+  width: 100%;
   color: white;
-  margin-bottom: 20px;
-}
-.left h1 {
-  margin-top: 20px;
-}
-.fb {
+  padding-top: 100px;
+  padding: 50px;
+  padding-left: 80px;
+  padding-right: 80px;
   display: flex;
-  justify-content: space-between;
-  flex-wrap: wrap;
-  gap: 10px;
+  gap: 35px;
 }
+
 .btn-fb {
-  width: 48%;
+  width: 23%;
   height: 90px;
   background-color: black;
   border: 0.1px solid rgb(53, 52, 52);

@@ -16,63 +16,43 @@ const Footer = () => {
   const handleInsta = () => {
     window.open("https://www.instagram.com/accounts/login/?force");
   };
+  const handleGithub = () => {
+    window.open("https://github.com/login");
+  };
+  const handleLinkdin = () => {
+    window.open("https://www.linkedin.com/login");
+  };
 
   return (
     <>
-      <div id="moving-footer">
-        <div className="footer">
-          <div className="touch">
-            <h1>GET IN TOUCH</h1>
-          </div>
-          <div className="down">
-            <div className="left">
-              <h3>
-                Hello, I’m Ashok Kumar Verma, Website & User Interface Designer
-                based in Jaipur.
-              </h3>
-              <h3
-                style={{
-                  marginTop: "50px",
-                  color: "#c9f31d",
-                }}
-              >
-                ak228308@gmail.com
-              </h3>
-            </div>
-            <div className="right">
-              <div className="fb">
-                <div className="btn-fb" onClick={handleFb}>
-                  <h4>Facebook</h4>
-                  <span>
-                    <FaArrowRight style={{ fontSize: "25px" }} />
-                  </span>
-                </div>
+      <div className="right">
+        <div className="btn-fb" onClick={handleFb}>
+          <h4>Facebook</h4>
+          <span>
+            <FaArrowRight style={{ fontSize: "25px" }} />
+          </span>
+        </div>
 
-                <div className="btn-fb" onClick={handleInsta}>
-                  <h4>Instagram</h4>
-                  <span>
-                    <FaArrowRight style={{ fontSize: "25px" }} />
-                  </span>
-                </div>
-              </div>
-              <div className="fb" style={{ marginTop: "40px" }}>
-                <div className="btn-fb">
-                  <h4>Webflow</h4>
-                  <span>
-                    <FaArrowRight style={{ fontSize: "25px" }} />
-                  </span>
-                </div>
-                <div className="btn-fb">
-                  <h4>Dribble</h4>
-                  <span>
-                    <FaArrowRight style={{ fontSize: "25px" }} />
-                  </span>
-                </div>
-              </div>
-            </div>
-          </div>
+        <div className="btn-fb" onClick={handleInsta}>
+          <h4>Instagram</h4>
+          <span>
+            <FaArrowRight style={{ fontSize: "25px" }} />
+          </span>
+        </div>
+        <div className="btn-fb" onClick={handleGithub}>
+          <h4>Git-Hub</h4>
+          <span>
+            <FaArrowRight style={{ fontSize: "25px" }} />
+          </span>
+        </div>
+        <div className="btn-fb" onClick={handleLinkdin}>
+          <h4>Linkdin</h4>
+          <span>
+            <FaArrowRight style={{ fontSize: "25px" }} />
+          </span>
         </div>
       </div>
+
       <div className="last-footer">
         <div>
           <h5>

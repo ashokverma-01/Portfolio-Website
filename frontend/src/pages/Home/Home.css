@@ -152,6 +152,12 @@
   font-weight: 800;
 }
 
+/* 🛑 Animation Stop on Hover */
+#moving-text:hover .con {
+  animation-play-state: paused;
+  cursor: pointer;
+}
+
 @keyframes move-right {
   from {
     transform: translateX(0);
@@ -372,7 +378,7 @@ body {
 .modal-content {
   position: relative;
   background-color: white;
-  padding: 20px;
+  padding: 10px;
   width: 80%;
   max-width: 800px;
   height: 400px;
@@ -387,7 +393,7 @@ body {
   position: absolute;
   top: 10px;
   right: 10px;
-  background-color: red;
+  background-color: #96bb04;
   border: none;
   color: white;
   font-size: 20px;
@@ -398,7 +404,7 @@ body {
 }
 
 .close-btn:hover {
-  background-color: #96bb04; /* Darker shade when hovered */
+  background-color: red;
 }
 
 /* ReactPlayer Styles */
@@ -408,7 +414,23 @@ body {
   border-radius: 10px;
   background-color: #000;
 }
-
+.modal-footer {
+  display: flex;
+  justify-content: space-between;
+  padding: 0;
+}
+.modal-footer button {
+  padding: 5px 15px;
+  cursor: pointer;
+  border: none;
+  background-color: #c9f31d;
+  color: black;
+  border-radius: 5px;
+}
+.modal-footer button:hover {
+  background-color: red;
+  color: white;
+}
 /* Modal Animation */
 @keyframes fadeIn {
   0% {
@@ -425,5 +447,60 @@ body {
   }
   100% {
     transform: scale(1);
+  }
+}
+
+/* Responsive Design */
+
+/* 📱 Mobile Devices */
+@media (max-width: 768px) {
+  .freelance {
+    width: 100%;
+    text-align: center;
+  }
+
+  .creative h1 {
+    font-size: 2rem;
+  }
+
+  .icon-video {
+    flex-direction: column;
+    gap: 5px;
+  }
+
+  .image {
+    width: 80%;
+  }
+
+  .follow {
+    flex-wrap: wrap;
+    gap: 10px;
+  }
+}
+
+/* 💻 Tablets */
+@media (max-width: 992px) {
+  .container-home {
+    flex-direction: column;
+    gap: 15px;
+  }
+
+  .freelance {
+    width: 100%;
+  }
+
+  .image {
+    width: 60%;
+  }
+}
+
+/* 🖥️ Large Screens */
+@media (min-width: 1200px) {
+  .container-home {
+    max-width: 1400px;
+  }
+
+  .creative h1 {
+    font-size: 3rem;
   }
 }

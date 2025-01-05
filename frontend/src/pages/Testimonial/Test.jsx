@@ -1,9 +1,9 @@
 import React, { useEffect } from "react";
 import { Carousel } from "antd";
 import { FaStar } from "react-icons/fa";
-import Test1 from "../../assets/test1.png";
-import Test2 from "../../assets/test2.png";
-import Test3 from "../../assets/test3.png";
+import Test1 from "../../assets/av4.png";
+import Test2 from "../../assets/av.jpg";
+import Test3 from "../../assets/av5.jpg";
 import Recent1 from "../../assets/recentpost1.png";
 import Recent2 from "../../assets/recentpost2.png";
 import Recent3 from "../../assets/recentpost3.png";
@@ -75,11 +75,14 @@ const Test = () => {
       <div className="test2">
         <div className="test3">
           <div className="image-test">
-            <div>
-              <img src={Test2} />
+            <div style={{ display: "flex", justifyContent: "center" }}>
+              <img
+                src={Test2}
+                style={{ borderRadius: "50%", width: "100px", height: "100px" }}
+              />
             </div>
             <div>
-              <img src={Test1} />
+              <img src={Test1} style={{ width: "200px", height: "250px" }} />
             </div>
           </div>
           <div className="test-scroll">
@@ -218,7 +221,15 @@ const Test = () => {
           </div>
           <div className="image-test2">
             <div>
-              <img src={Test3} />
+              <img
+                src={Test3}
+                style={{
+                  width: "190px",
+                  height: "210px",
+                  borderTopRightRadius: "90px",
+                  borderTopLeftRadius: "90px",
+                }}
+              />
             </div>
             <div className="sign">
               <PiSignatureDuotone
@@ -253,12 +264,6 @@ const Test = () => {
               <IoLogoSlack />
             </span>
             <span>Slack</span>
-          </div>
-          <div className="test-last-text">
-            <span>Walmart</span>
-            <span>
-              <GiFlowerStar />
-            </span>
           </div>
         </div>
       </div>

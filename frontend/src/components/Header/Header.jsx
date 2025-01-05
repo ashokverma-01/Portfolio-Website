@@ -13,6 +13,7 @@ import { IoIosArrowForward } from "react-icons/io";
 
 const Header = () => {
   const [popoverVisible, setPopoverVisible] = useState(false);
+  const [menuVisible, setMenuVisible] = useState(false);
   const navigate = useNavigate();
 
   const togglePopover = () => {
@@ -29,6 +30,7 @@ const Header = () => {
     });
   };
   const handleContact = () => {
+    scrollToTop();
     navigate("/contact");
   };
   const handleFb = () => {
@@ -43,15 +45,30 @@ const Header = () => {
   const handleyoutube = () => {
     window.open("https://www.youtube.com/index?persist_app=1&app=desktop");
   };
+  const toggleMobileMenu = () => {
+    setMenuVisible(!menuVisible);
+  };
 
   return (
     <>
       <nav className="navbar navbar-expand-lg navbar-light sticky-top">
         <div className="container-fluid">
-          <Link to="#" className="navbar-brand text-white">
+          <Link
+            to="/"
+            className="navbar-brand text-white"
+            onClick={scrollToTop}
+          >
             <img src={AVLOGO} className="logo" alt="Logo" />
           </Link>
-          <form className="d-flex gap-4">
+          {/* Mobile Menu Toggle Button */}
+          <button className="menu-toggle-btn" onClick={toggleMobileMenu}>
+            {menuVisible ? <IoMdClose /> : <SlMenu />}
+          </button>
+          <form
+            className={`d-flex gap-4 navbar-links ${
+              menuVisible ? "active" : ""
+            }`}
+          >
             <Link
               onClick={scrollToTop}
               to="/"

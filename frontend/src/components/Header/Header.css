@@ -162,3 +162,72 @@
     height: 45px;
   }
 }
+
+/* General Styles */
+.navbar-links {
+  display: flex;
+  gap: 1.5rem;
+  align-items: center;
+  justify-content: center;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.navbar-brand {
+  text-decoration: none;
+  font-size: 16px;
+  color: white;
+  transition: color 0.3s ease;
+}
+
+.navbar-brand:hover {
+  color: rgb(170, 211, 2);
+}
+
+/* Mobile Menu Toggle Button */
+.menu-toggle-btn {
+  display: none;
+  background: none;
+  border: none;
+  font-size: 1.5rem;
+  color: white;
+  cursor: pointer;
+}
+
+/* Mobile Menu Styles */
+@media (max-width: 768px) {
+  .menu-toggle-btn {
+    display: block;
+  }
+
+  .navbar-links {
+    flex-direction: column;
+    background: rgba(0, 0, 0, 0.9);
+    position: absolute;
+    top: 23px;
+    left: 196px;
+    width: 50%;
+    height: 100vh;
+    transform: translateY(-100%);
+    transition: transform 0.3s ease-in-out;
+    z-index: 1000;
+  }
+
+  .navbar-links.active {
+    transform: translateY(0);
+  }
+
+  .navbar-brand {
+    font-size: 18px;
+    margin: 10px 0;
+  }
+}
+
+/* Desktop Navbar */
+@media (min-width: 769px) {
+  .navbar-links {
+    display: flex;
+    flex-direction: row;
+  }
+}

@@ -1,4 +1,4 @@
-import React from "react";
+import { useEffect, useRef } from "react";
 import "./BlogDetail.css";
 import { Link } from "react-router-dom";
 import Blog1 from "../../assets/blog1.png";
@@ -21,6 +21,8 @@ import axios from "axios";
 import { ShowToast, Severty } from "../../helpers/toast";
 
 const BlogDetail = () => {
+  const blogContainerRef = useRef(null);
+  const blogLeftRef = useRef(null);
   const formik = useFormik({
     initialValues: {
       name: "",
@@ -41,7 +43,7 @@ const BlogDetail = () => {
     onSubmit: async (values, { resetForm }) => {
       try {
         const response = await axios.post(
-          "http://localhost:5500/api/users",
+          "https://portfolio-website-74ap.onrender.com/api/users",
           values
         );
         ShowToast("User Comment successfully", Severty.SUCCESS);
@@ -51,9 +53,36 @@ const BlogDetail = () => {
       }
     },
   });
+
+  useEffect(() => {
+    const blogContainer = blogContainerRef.current;
+    const blogLeft = blogLeftRef.current;
+
+    const handleScroll = () => {
+      if (blogContainer.scrollTop >= 130) {
+        blogLeft.classList.add("active"); // Enable inner scroll
+      } else {
+        blogLeft.classList.remove("active"); // Disable inner scroll
+      }
+    };
+
+    if (blogContainer && blogLeft) {
+      blogContainer.addEventListener("scroll", handleScroll);
+    } else {
+      console.error(
+        "Element(s) not found: Check .blog-container or .blog-left in your JSX."
+      );
+    }
+
+    // Cleanup event listener on component unmount
+    return () => {
+      blogContainer?.removeEventListener("scroll", handleScroll);
+    };
+  }, []);
+
   return (
     <>
-      <div className="blog-container2">
+      <div className="blog-container2" ref={blogContainerRef}>
         <div className="blog2">
           <div>
             <h1 style={{ color: "white" }}>
@@ -76,7 +105,7 @@ const BlogDetail = () => {
           </div>
         </div>
         <div className="blog-main2">
-          <div className="blog-left2">
+          <div className="blog-left2" ref={blogLeftRef}>
             <div className="blog-list2">
               <div>
                 <img src={Blog1} />

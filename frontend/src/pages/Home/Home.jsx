@@ -19,6 +19,7 @@ import Service from "../Service/Service";
 const Home = () => {
   const [isPlaying, setIsPlaying] = useState(false);
   const [isModalOpen, setIsModalOpen] = useState(false);
+  const [currentVideoIndex, setCurrentVideoIndex] = useState(0);
   useEffect(() => {
     const mouseEffect = document.querySelector("#mouse-effect");
 
@@ -45,12 +46,27 @@ const Home = () => {
     };
   }, []);
 
-  const videoUrl =
-    "https://www.youtube.com/watch?v=gmlh8-8wD20&pp=ygURY29kZSBzdGVwIGJ5IHN0ZXA%3D";
+  const videoList = [
+    "https://youtube.com/shorts/8JxP03Vo3yY?si=iF-6ZyK0a1nM7c72",
+    "https://youtube.com/shorts/6_1jIMRgrvk?si=4bEwMG6lcxHc8TTq",
+    "https://youtube.com/shorts/meJpDX31wAs?si=X6kSUQ2rw_i_0iQ3",
+    "https://youtube.com/shorts/TCu3hUb3q-I?si=iasVFzd6fZg-cdHS",
+    "https://youtube.com/shorts/k6eczNko02o?si=GU-JWp5wSILyr1_6",
+    "https://youtube.com/shorts/M0oac2Rto9o?si=cSwhcGjpowkn4Bda",
+    "https://youtube.com/shorts/PZ3wjVp2Xfs?si=ZZMl0CnvzaPO8VNk",
+  ];
 
   const handlePlayButtonClick = () => {
     setIsModalOpen(true);
     setIsPlaying(true);
+  };
+  const handleNextVideo = () => {
+    setCurrentVideoIndex((prevIndex) => (prevIndex + 1) % videoList.length);
+  };
+  const handlePreviousVideo = () => {
+    setCurrentVideoIndex((prevIndex) =>
+      prevIndex === 0 ? videoList.length - 1 : prevIndex - 1
+    );
   };
 
   const handleCloseModal = () => {
@@ -203,12 +219,16 @@ const Home = () => {
               X
             </button>
             <ReactPlayer
-              url={videoUrl}
+              url={videoList[currentVideoIndex]}
               playing={isPlaying}
               controls={true}
               width="100%"
               height="400px"
             />
+            <div className="modal-footer">
+              <button onClick={handlePreviousVideo}>Previous Video</button>
+              <button onClick={handleNextVideo}>Next Video</button>
+            </div>
           </div>
         </div>
       )}

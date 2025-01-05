@@ -21,6 +21,7 @@ connectDB();
 app.use(express.json());
 const coreOptions = {
   origin: "https://portfolio-website-74ap.onrender.com",
+  // origin: "http://localhost:5500",
   credentials: "true",
 };
 app.use(cors(coreOptions));

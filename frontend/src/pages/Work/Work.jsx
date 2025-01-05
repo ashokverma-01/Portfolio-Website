@@ -80,7 +80,9 @@ const Work = () => {
         </div>
         <div className="p-images">
           <div className="p-I">
-            <img src={BrandImage} />
+            <div className="image-container">
+              <img src={BrandImage} />
+            </div>
             <div className="i-foot">
               <div>
                 <h6 style={{ color: "#c9f31d" }}>PRODUCT DESIGN</h6>
@@ -94,7 +96,9 @@ const Work = () => {
             </div>
           </div>
           <div className="p-I">
-            <img src={BrandImage1} />
+            <div className="image-container">
+              <img src={BrandImage1} />
+            </div>
             <div className="i-foot">
               <div>
                 <h6 style={{ color: "#c9f31d" }}>UI/UX DESIGN</h6>
@@ -110,7 +114,9 @@ const Work = () => {
         </div>
         <div className="p-images">
           <div className="p-I">
-            <img src={BrandImage4} />
+            <div className="image-container">
+              <img src={BrandImage4} />
+            </div>
             <div className="i-foot">
               <div>
                 <h6 style={{ color: "#c9f31d" }}>PRODUCT DESIGN</h6>
@@ -124,7 +130,9 @@ const Work = () => {
             </div>
           </div>
           <div className="p-I">
-            <img src={BrandImage5} />
+            <div className="image-container">
+              <img src={BrandImage5} />
+            </div>
             <div className="i-foot">
               <div>
                 <h6 style={{ color: "#c9f31d" }}>UI/UX DESIGN</h6>
@@ -140,7 +148,9 @@ const Work = () => {
         </div>
         <div className="p-images">
           <div className="p-I">
-            <img src={BrandImage2} />
+            <div className="image-container">
+              <img src={BrandImage2} />
+            </div>
             <div className="i-foot">
               <div>
                 <h6 style={{ color: "#c9f31d" }}>PRODUCT DESIGN</h6>
@@ -154,7 +164,9 @@ const Work = () => {
             </div>
           </div>
           <div className="p-I">
-            <img src={BrandImage3} />
+            <div className="image-container">
+              <img src={BrandImage3} />
+            </div>
             <div className="i-foot">
               <div>
                 <h6 style={{ color: "#c9f31d" }}>UI/UX DESIGN</h6>
