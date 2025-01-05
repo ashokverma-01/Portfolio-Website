@@ -357,7 +357,9 @@ const WorkPort = () => {
           <div className="p-h">
             <h1>
               Your Dream Website In Just<br></br>
-              <span style={{ marginLeft: "250px" }}>Few Steps</span>
+              <div className="few">
+                <span>Few Steps</span>
+              </div>
             </h1>
           </div>
         </div>

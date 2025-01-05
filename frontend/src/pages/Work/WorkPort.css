@@ -1,3 +1,4 @@
+/* General Portfolio Styles */
 .portfolia {
   color: white;
   padding-top: 50px;
@@ -87,7 +88,10 @@
   background-color: black;
   color: white;
 }
-
+.p-I img {
+  width: 100%;
+  vertical-align: middle;
+}
 .i-foot {
   display: flex;
   justify-content: space-between;
@@ -227,10 +231,10 @@ li::marker {
   background-color: #c9f31d;
 }
 
-/* Mobile responsiveness */
-@media (max-width: 768px) {
+/* Media Queries for Mobile Responsiveness */
+@media only screen and (max-width: 768px) {
   .portfolia h1 {
-    font-size: 30px;
+    font-size: 36px;
   }
 
   .portfolia span {
@@ -239,13 +243,7 @@ li::marker {
 
   .all-btn {
     flex-direction: column;
-    width: 80%;
-  }
-
-  .port-btn {
-    border-right: none;
-    padding: 10px;
-    width: 100%;
+    width: 90%;
   }
 
   .p-images2 {
@@ -257,7 +255,12 @@ li::marker {
   .p-I {
     width: 100%;
     height: auto;
-    margin-bottom: 20px;
+  }
+
+  .i-foot {
+    flex-direction: column;
+    align-items: center;
+    padding-top: 20px;
   }
 
   .fst {
@@ -270,26 +273,34 @@ li::marker {
   .second,
   .third {
     width: 100%;
+    height: auto;
     margin-bottom: 20px;
+    padding-left: 10px;
+    padding-right: 10px;
   }
 
   .top-text {
-    width: 100%;
+    width: 80%;
+  }
+
+  .top-text::before,
+  .top-text::after {
+    margin: 0 5px;
   }
 
   .p-h h1 {
     font-size: 40px;
-    text-align: center;
   }
 
-  .span-p {
-    margin-left: 10px;
+  .arrow-w button {
+    font-size: 18px;
+    padding: 15px;
   }
 }
 
-@media (max-width: 480px) {
+@media only screen and (max-width: 480px) {
   .portfolia h1 {
-    font-size: 25px;
+    font-size: 28px;
   }
 
   .portfolia span {
@@ -297,7 +308,8 @@ li::marker {
   }
 
   .all-btn {
-    width: 90%;
+    width: 100%;
+    flex-direction: column;
   }
 
   .p-images2 {
@@ -305,27 +317,24 @@ li::marker {
     padding-right: 10px;
   }
 
-  .p-I {
-    width: 100%;
-    height: auto;
-  }
-
   .fst {
-    flex-direction: column;
-    padding-left: 15px;
-    padding-right: 15px;
+    padding-left: 10px;
+    padding-right: 10px;
   }
 
   .first,
   .second,
   .third {
     width: 100%;
-    padding: 15px;
-    margin-bottom: 15px;
+    height: auto;
   }
 
   .p-h h1 {
     font-size: 30px;
-    text-align: center;
+  }
+
+  .arrow-w button {
+    font-size: 16px;
+    padding: 10px;
   }
 }

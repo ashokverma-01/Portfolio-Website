@@ -146,89 +146,6 @@
 .icon-more {
   text-align: center;
 }
-.project-b {
-  width: 100%;
-  height: 100vh;
-  background-color: black;
-  display: flex;
-  padding-top: 50px;
-  padding-left: 50px;
-  padding-right: 50px;
-}
-.project1 {
-  width: 50%;
-  height: 90vh;
-  background-color: rgb(25, 24, 24);
-  padding-left: 80px;
-  border-radius: 10px;
-}
-.project2 {
-  width: 50%;
-  height: 90vh;
-  background-color: rgb(25, 24, 24);
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  border-radius: 10px;
-}
-.together {
-  width: 100%;
-  height: 10%;
-  display: flex;
-}
-.email-location {
-  width: 100%;
-  height: 20%;
-  padding-top: 50px;
-  /* border-bottom: 1px solid #c9f31d; */
-}
-.email-location:hover {
-  border-bottom: 1px solid #c9f31d;
-}
-.one-two {
-  width: 90%;
-  height: 40%;
-  color: white;
-  padding-top: 20px;
-}
-.one-two:hover {
-  border-bottom: 1px solid #c9f31d;
-}
-.one {
-  display: flex;
-  height: 2px;
-  background-color: #c9f31d;
-  width: 100px;
-  margin-top: 10px;
-}
-.two {
-  margin-left: 20px;
-  color: #c9f31d;
-  font-style: italic;
-}
-.fixed {
-  transform: translateY(60px);
-  opacity: 0;
-  transition: transform 2s ease, opacity 1s ease;
-  color: white;
-}
-.fixed h1 {
-  margin-top: 30px;
-  font-size: 60px;
-  font-weight: 600;
-}
-.email2 {
-  display: flex;
-}
-.email-icon {
-  background-color: #c9f31d;
-  width: 50px;
-  height: 50px;
-  border-radius: 50%;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
 
 /* General Mobile Responsive Styles */
 @media (max-width: 768px) {
@@ -301,59 +218,6 @@
     width: 150px;
     height: 150px;
   }
-
-  .project-b {
-    flex-direction: column;
-    align-items: center;
-  }
-
-  .project1,
-  .project2 {
-    width: 100%;
-    height: auto;
-    padding: 20px;
-    border-radius: 10px;
-  }
-
-  .together {
-    flex-direction: column;
-    align-items: center;
-  }
-
-  .email-location {
-    width: 100%;
-    height: auto;
-  }
-
-  .one-two {
-    width: 100%;
-    padding-top: 10px;
-  }
-
-  .one {
-    width: 70px;
-    margin-top: 5px;
-  }
-
-  .two {
-    font-size: 14px;
-  }
-
-  .fixed {
-    transform: translateY(30px);
-    opacity: 1;
-    color: white;
-  }
-
-  .fixed h1 {
-    font-size: 40px;
-    margin-top: 20px;
-  }
-
-  .email-icon {
-    width: 40px;
-    height: 40px;
-  }
 }
 
 /* Mobile view for smaller screens */
@@ -388,44 +252,203 @@
     width: 130px;
     height: 130px;
   }
+}
+/* Base styles */
+/* General styles */
+.project-b {
+  width: 100%;
+  height: 100vh;
+  background-color: black;
+  display: flex;
+  padding-top: 50px;
+  padding-left: 50px;
+  padding-right: 50px;
+}
 
+.project1,
+.project2 {
+  width: 50%;
+  height: 90vh;
+  background-color: rgb(25, 24, 24);
+  border-radius: 10px;
+}
+
+.project2 {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.together {
+  width: 100%;
+  height: 10%;
+  display: flex;
+}
+
+.email-location {
+  width: 100%;
+  height: 20%;
+  padding-top: 50px;
+}
+
+.email-location:hover {
+  border-bottom: 1px solid #c9f31d;
+}
+
+.one-two {
+  width: 90%;
+  height: 40%;
+  color: white;
+  padding-top: 20px;
+}
+
+.one-two:hover {
+  border-bottom: 1px solid #c9f31d;
+}
+
+.one {
+  display: flex;
+  height: 2px;
+  background-color: #c9f31d;
+  width: 100px;
+  margin-top: 10px;
+}
+
+.two {
+  margin-left: 20px;
+  color: #c9f31d;
+  font-style: italic;
+}
+
+.fixed {
+  transform: translateY(60px);
+  opacity: 0;
+  transition: transform 2s ease, opacity 1s ease;
+  color: white;
+}
+
+.fixed h1 {
+  margin-top: 30px;
+  font-size: 60px;
+  font-weight: 600;
+}
+
+.email2 {
+  display: flex;
+}
+
+.email-icon {
+  background-color: #c9f31d;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* Mobile responsive styles */
+@media screen and (max-width: 768px) {
   .project-b {
-    padding-top: 30px;
+    flex-direction: column;
+    padding-left: 20px;
+    padding-right: 20px;
   }
 
   .project1,
   .project2 {
     width: 100%;
     height: auto;
-    padding: 30px;
+    padding-left: 20px;
+    padding-right: 20px;
   }
 
-  .together {
-    flex-direction: column;
-    align-items: center;
+  .project2 {
+    display: block;
+    align-items: flex-start;
+    justify-content: flex-start;
   }
 
   .email-location {
-    width: 100%;
-    padding-top: 10px;
+    padding-top: 20px;
   }
 
   .one-two {
+    padding-top: 10px;
     width: 100%;
-    padding-top: 5px;
   }
 
   .one {
-    width: 60px;
-    margin-top: 5px;
+    margin-top: 15px;
+    width: 80px;
   }
 
   .two {
-    font-size: 12px;
+    margin-left: 10px;
+  }
+
+  .fixed h1 {
+    font-size: 30px;
+    margin-top: 20px;
+  }
+
+  .email2 {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .email-icon {
+    width: 40px;
+    height: 40px;
+  }
+
+  .project1 {
+    padding-bottom: 20px;
+  }
+}
+
+/* Extra small devices (mobile) */
+@media screen and (max-width: 480px) {
+  .project-b {
+    padding-top: 30px;
+    padding-left: 10px;
+    padding-right: 10px;
+  }
+
+  .project1,
+  .project2 {
+    padding-left: 10px;
+    padding-right: 10px;
+  }
+
+  .email-location {
+    padding-top: 10px;
+  }
+
+  .fixed h1 {
+    font-size: 24px;
+    margin-top: 15px;
   }
 
   .email-icon {
     width: 35px;
     height: 35px;
+  }
+
+  .one {
+    width: 70px;
+  }
+
+  .two {
+    font-size: 14px;
+  }
+
+  .project1 {
+    padding-bottom: 15px;
+  }
+
+  .project2 img {
+    width: 100%;
+    height: auto;
   }
 }
