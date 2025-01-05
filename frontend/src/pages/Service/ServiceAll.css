@@ -373,6 +373,10 @@ li::marker {
 .p-h h1 {
   font-size: 60px;
 }
+.few {
+  width: 100%;
+  text-align: center;
+}
 .fst {
   width: 100%;
   height: 400px;
@@ -646,4 +650,139 @@ li::marker {
 .pay-btn2 button:hover {
   background-color: white;
   color: black;
+}
+/* Existing CSS remains unchanged */
+
+/* Mobile Responsive Styles */
+@media (max-width: 768px) {
+  .contact {
+    padding-top: 30px;
+    height: auto;
+  }
+  .contact h1 {
+    font-size: 30px;
+  }
+  .contact span {
+    font-size: 16px;
+  }
+
+  .service {
+    padding: 40px 20px;
+  }
+  .service-box {
+    flex-direction: column;
+    padding: 20px 10px;
+  }
+  .item1,
+  .item2,
+  .item3 {
+    width: 100%;
+    text-align: center;
+    padding: 10px 0;
+  }
+
+  .fst {
+    flex-direction: column;
+    height: auto;
+    padding: 20px;
+  }
+  .first,
+  .second,
+  .third {
+    width: 90%;
+    margin-bottom: 20px;
+  }
+
+  .project {
+    flex-direction: column;
+    padding: 20px;
+  }
+  .project1,
+  .project2 {
+    width: 100%;
+    height: auto;
+    padding: 20px;
+  }
+
+  .payment {
+    flex-direction: column;
+    padding: 20px;
+  }
+  .payment-1,
+  .payment-2 {
+    width: 90%;
+    margin-bottom: 20px;
+  }
+  .month h1,
+  .month2 h1 {
+    font-size: 30px;
+  }
+
+  .top-text {
+    width: 80%;
+  }
+  .p-h h1 {
+    font-size: 40px;
+  }
+
+  .email-location,
+  .one-two {
+    width: 100%;
+    text-align: center;
+  }
+
+  .pay-btn button,
+  .pay-btn2 button {
+    height: 45px;
+    font-size: 14px;
+  }
+
+  .email-icon {
+    width: 40px;
+    height: 40px;
+  }
+}
+
+@media (max-width: 480px) {
+  .contact h1 {
+    font-size: 24px;
+  }
+  .contact span {
+    font-size: 14px;
+  }
+
+  .service {
+    padding: 20px;
+  }
+  .service-box {
+    padding: 10px 0;
+  }
+
+  .fst {
+    padding: 10px;
+  }
+  .first,
+  .second,
+  .third {
+    width: 100%;
+  }
+
+  .project1,
+  .project2 {
+    padding: 10px;
+  }
+
+  .payment-1,
+  .payment-2 {
+    width: 100%;
+  }
+
+  .month h1,
+  .month2 h1 {
+    font-size: 24px;
+  }
+  .pay-btn button,
+  .pay-btn2 button {
+    font-size: 12px;
+  }
 }

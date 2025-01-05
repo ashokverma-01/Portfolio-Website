@@ -74,7 +74,9 @@ const Work = () => {
           <div className="p-h">
             <h1>
               Look At My Portfolio And Give Me <br></br>
-              <span style={{ marginLeft: "250px" }}>Your Feedback</span>
+              <div className="give">
+                <span>Your Feedback</span>
+              </div>
             </h1>
           </div>
         </div>
@@ -208,7 +210,10 @@ const Work = () => {
               </div>
               <div id="fix">
                 <div className="fixed">
-                  <h1>Let's Work Together. Fixed A Meeting</h1>
+                  <h1>
+                    Let's Work Together
+                    <br /> Fixed A Meeting
+                  </h1>
                 </div>
               </div>
             </div>

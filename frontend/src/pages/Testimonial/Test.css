@@ -52,7 +52,29 @@
 .p-test h1 {
   font-size: 60px;
 }
+.customer {
+  width: 100%;
+  text-align: center;
+}
 
+@media (max-width: 768px) {
+  .p-test {
+    transform: translateY(40px); /* Slightly reduced transform for mobile */
+    opacity: 1; /* Make sure the element is visible on mobile */
+    padding: 20px; /* Add padding for mobile */
+    flex-direction: column; /* Stack content vertically */
+  }
+
+  .p-test h1 {
+    font-size: 30px; /* Reduce font size for smaller screens */
+    line-height: 1.4; /* Adjust line height for better readability */
+    margin: 0; /* Remove extra margin */
+  }
+
+  .p-test h1 span {
+    margin-left: 0; /* Remove the large left margin on mobile */
+  }
+}
 /* Carousel Section */
 .test2 {
   width: 100%;
@@ -138,6 +160,52 @@
     transform: rotate(20deg);
   }
 }
+@media (max-width: 768px) {
+  .test2 {
+    padding: 20px 10px;
+  }
+
+  .test3 {
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  .image-test img {
+    width: 80px;
+    height: 80px;
+  }
+
+  .image-test2 img {
+    width: 120px;
+    height: 140px;
+  }
+
+  .test-scroll {
+    width: 100%;
+    height: auto;
+  }
+
+  .first-1 p {
+    font-size: 14px;
+    line-height: 1.4;
+  }
+
+  .first-1 h3 {
+    font-size: 16px;
+  }
+
+  .first-1 h4 {
+    font-size: 14px;
+  }
+
+  .star span {
+    font-size: 18px;
+  }
+
+  .sign {
+    font-size: 50px;
+  }
+}
 .test-last {
   width: 100%;
   height: 30vh;
@@ -161,6 +229,53 @@
   font-size: 40px;
   color: rgb(174, 176, 179);
 }
+@media (max-width: 768px) {
+  .test-last-1 h2 {
+    font-size: 1.5rem;
+    padding: 0 20px;
+  }
+
+  .test-last-2 {
+    gap: 15px;
+    padding: 20px 30px;
+  }
+
+  .test-last-text {
+    width: 40%;
+    font-size: 1rem;
+    text-align: center;
+  }
+
+  .test-last-text span {
+    font-size: 1.2rem;
+  }
+}
+
+/* ✅ Mobile View (480px and below) */
+@media (max-width: 480px) {
+  .test-last-1 h2 {
+    font-size: 1.2rem;
+    padding: 0 10px;
+  }
+
+  .test-last-2 {
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+    padding: 20px 10px;
+  }
+
+  .test-last-text {
+    width: 90%;
+    font-size: 1rem;
+    text-align: center;
+    gap: 5px;
+  }
+
+  .test-last-text span {
+    font-size: 1rem;
+  }
+}
 .test-last2 {
   width: 100%;
   height: auto;
@@ -171,6 +286,7 @@
   padding-right: 60px;
   padding-bottom: 50px;
 }
+
 .test-left {
   padding: 10px;
   width: 30%;
@@ -364,4 +480,128 @@
   padding: 10px;
   text-align: center;
   color: rgb(117, 113, 113);
+}
+/* Mobile Responsiveness */
+@media (max-width: 768px) {
+  .test-last2 {
+    flex-direction: column;
+    padding: 20px;
+  }
+
+  .test-left {
+    width: 100%;
+    border-radius: 10px 10px 0 0;
+    padding: 20px;
+    text-align: center;
+  }
+
+  .test-right {
+    width: 100%;
+    border-radius: 0 0 10px 10px;
+    padding: 20px;
+  }
+
+  .recent-post h1 {
+    font-size: 30px;
+  }
+
+  .top-left span {
+    font-size: 20px;
+  }
+
+  .more {
+    width: 120px;
+    height: 120px;
+  }
+
+  .more2 {
+    width: 127px;
+    height: 127px;
+  }
+
+  .test-right-1 {
+    flex-direction: column;
+    height: auto;
+    text-align: center;
+    padding: 20px;
+  }
+
+  .tr-1,
+  .tr-2,
+  .tr-3 {
+    width: 100%;
+    height: auto;
+    padding: 10px 0;
+  }
+
+  .tr-1 h2 {
+    font-size: 18px;
+  }
+
+  .tr-2 img {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+  }
+
+  .eye {
+    width: 50px;
+    height: 50px;
+  }
+
+  .eye-icon {
+    font-size: 20px;
+  }
+
+  .november {
+    width: 100%;
+    font-size: 12px;
+    margin-bottom: 10px;
+  }
+
+  .icon-more {
+    font-size: 14px;
+  }
+
+  .icon-more a {
+    font-size: 14px;
+  }
+}
+
+/* Extra Small Devices */
+@media (max-width: 480px) {
+  .recent-post h1 {
+    font-size: 24px;
+  }
+
+  .top-left span {
+    font-size: 18px;
+  }
+
+  .more {
+    width: 100px;
+    height: 100px;
+  }
+
+  .more2 {
+    width: 107px;
+    height: 107px;
+  }
+
+  .test-right-1 {
+    padding: 15px;
+  }
+
+  .tr-1 h2 {
+    font-size: 16px;
+  }
+
+  .eye {
+    width: 40px;
+    height: 40px;
+  }
+
+  .eye-icon {
+    font-size: 18px;
+  }
 }

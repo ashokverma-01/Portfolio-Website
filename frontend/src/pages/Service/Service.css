@@ -44,7 +44,10 @@
   opacity: 0;
   transition: transform 2s ease, opacity 1s ease;
 }
-
+.bus {
+  width: 100%;
+  text-align: center;
+}
 #p-test2 {
   background-color: black;
 }
@@ -127,6 +130,7 @@
 .service-box:hover .item1 .two2 h1 {
   color: #c9f31d;
 }
+
 /* //second working process */
 .project {
   width: 100%;
@@ -168,6 +172,10 @@
   transform: translateY(60px);
   opacity: 0;
   transition: transform 2s ease, opacity 1s ease;
+}
+.few {
+  width: 100%;
+  text-align: center;
 }
 .p-h h1 {
   font-size: 60px;
@@ -285,4 +293,190 @@ li::marker {
 }
 .third:hover .span-p {
   background-color: #c9f31d;
+}
+/* General Mobile Responsiveness */
+
+/* Mobile Responsiveness */
+@media (max-width: 768px) {
+  .test {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .top {
+    width: 80%;
+    margin: 10px 0;
+  }
+
+  .p-test {
+    transform: translateY(0);
+    opacity: 1;
+  }
+
+  .p-test h1 {
+    font-size: 36px;
+    text-align: center;
+  }
+
+  .service {
+    padding: 30px 15px;
+  }
+
+  .service-box {
+    flex-direction: column;
+    gap: 20px;
+    text-align: center;
+    padding: 20px 0;
+  }
+
+  .item1,
+  .item2,
+  .item3 {
+    width: 100%;
+    height: auto;
+    text-align: center;
+    padding: 10px 0;
+  }
+
+  .one1 {
+    width: 100%;
+    font-size: 20px;
+  }
+
+  .two2 {
+    width: 100%;
+    padding-top: 10px;
+    font-size: 14px;
+  }
+
+  .item3 button {
+    padding: 10px 15px;
+    font-size: 14px;
+  }
+
+  .project {
+    flex-direction: column;
+    padding: 20px;
+  }
+
+  .top-text {
+    width: 80%;
+    margin: 10px 0;
+  }
+
+  .p-h h1 {
+    font-size: 36px;
+  }
+
+  .fst {
+    flex-direction: column;
+    gap: 20px;
+    padding: 20px;
+    height: auto;
+  }
+
+  .first,
+  .second,
+  .third {
+    width: 90%;
+    height: auto;
+    text-align: center;
+    padding: 20px;
+  }
+
+  .first h1,
+  .second h1,
+  .third h1 {
+    font-size: 20px;
+  }
+
+  .first p,
+  .second p,
+  .third p {
+    font-size: 14px;
+  }
+
+  .first li,
+  .second li,
+  .third li {
+    font-size: 14px;
+    text-align: left;
+  }
+
+  .span-p {
+    width: 30px;
+    height: 30px;
+    margin: 10px auto;
+  }
+}
+
+/* Extra Small Devices */
+@media (max-width: 480px) {
+  .top {
+    width: 90%;
+  }
+
+  .p-test h1,
+  .p-h h1 {
+    font-size: 24px;
+  }
+
+  .service {
+    padding: 20px 10px;
+  }
+
+  .service-box {
+    gap: 15px;
+  }
+
+  .one1 {
+    font-size: 18px;
+  }
+
+  .two2 h1 {
+    font-size: 16px;
+  }
+
+  .two2 h4 {
+    font-size: 12px;
+  }
+
+  .item3 button {
+    padding: 8px 12px;
+    font-size: 12px;
+  }
+
+  .fst {
+    padding: 10px;
+  }
+
+  .first,
+  .second,
+  .third {
+    width: 100%;
+    padding: 15px;
+  }
+
+  .first h1,
+  .second h1,
+  .third h1 {
+    font-size: 18px;
+  }
+
+  .first p,
+  .second p,
+  .third p {
+    font-size: 12px;
+  }
+
+  .first li,
+  .second li,
+  .third li {
+    font-size: 12px;
+  }
+
+  .span-p {
+    width: 25px;
+    height: 25px;
+  }
 }

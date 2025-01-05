@@ -25,6 +25,10 @@
   justify-content: center;
   align-items: center;
 }
+.redy {
+  width: 100%;
+  text-align: center;
+}
 .btn-page {
   margin-top: 50px;
   width: 100%;

@@ -120,6 +120,19 @@
   padding: 22px;
   margin-left: 20px;
 }
+@media (max-width: 768px) {
+  .next-btn {
+    flex-direction: column; /* Stack buttons vertically */
+    padding: 20px; /* Adjust padding for mobile */
+    gap: 15px; /* Adjust gap between buttons */
+  }
+
+  .btn1 button {
+    width: 100%; /* Make buttons full width */
+    padding: 15px; /* Reduce padding on smaller screens */
+    margin-left: 0; /* Remove left margin for better alignment */
+  }
+}
 
 .blog-right {
   width: 30%;
@@ -271,4 +284,27 @@
   color: rgb(174, 176, 179);
   background: none;
   border: 0.1px solid rgb(102, 101, 101);
+}
+@media (max-width: 768px) {
+  .tag {
+    padding: 20px;
+  }
+
+  .tag-btn,
+  .tag-btn2,
+  .tag-btn3,
+  .tag-btn4 {
+    flex-direction: column;
+    gap: 10px;
+    align-items: flex-start;
+  }
+
+  .tag-btn button,
+  .tag-btn2 button,
+  .tag-btn3 button,
+  .tag-btn4 button {
+    width: 100%;
+    text-align: center;
+    padding: 12px 0;
+  }
 }

@@ -104,14 +104,14 @@ const About = () => {
               I'm Ashok Verma, I'm a Brand & Webflow Designer, Currently
               residing
               <br />
-              <span style={{ marginLeft: "30px" }}>
+              <span>
                 in the lush Victoria Street London, Matias operates globally and
                 is
               </span>
               <br />
-              <span style={{ marginLeft: "250px" }}>
-                ready to take on any design challenge.
-              </span>
+              <div className="redy">
+                <span>ready to take on any design challenge.</span>
+              </div>
             </h1>
           </div>
         </div>

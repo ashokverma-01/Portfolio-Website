@@ -67,7 +67,9 @@ const Test = () => {
         <div className="p-test">
           <h1>
             Happy Words From Happy <br />
-            <span style={{ marginLeft: "250px" }}>Customer</span>
+            <div className="customer">
+              <span>Customer</span>
+            </div>
           </h1>
         </div>
       </div>

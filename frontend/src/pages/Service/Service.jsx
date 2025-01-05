@@ -45,7 +45,9 @@ const Service = () => {
         <div className="p-test">
           <h1>
             My Special Service For Your <br />
-            <span style={{ marginLeft: "80px" }}>Business Development</span>
+            <div className="bus">
+              <span>Business Development</span>
+            </div>
           </h1>
         </div>
       </div>
@@ -176,7 +178,9 @@ const Service = () => {
           <div className="p-h">
             <h1>
               Your Dream Website In Just<br></br>
-              <span style={{ marginLeft: "250px" }}>Few Steps</span>
+              <div className="few">
+                <span>Few Steps</span>
+              </div>
             </h1>
           </div>
         </div>
