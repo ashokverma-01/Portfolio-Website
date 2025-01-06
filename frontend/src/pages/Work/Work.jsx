@@ -212,7 +212,7 @@ const Work = () => {
                 <div className="fixed">
                   <h1>
                     Let's Work Together
-                    <br /> Fixed A Meeting
+                    <div className="let">Fixed A Meeting</div>
                   </h1>
                 </div>
               </div>

@@ -195,48 +195,7 @@ const ServiceAll = () => {
           </div>
         </div>
       </div>
-      <div className="project-b">
-        <div className="project1">
-          <div className="one-two">
-            <div className="together">
-              <div className="one"></div>
-              <div className="two">Need a Project?</div>
-            </div>
-            <div id="fix">
-              <div className="fixed">
-                <h1>Let's Work Together. Fixed A Meeting</h1>
-              </div>
-            </div>
-          </div>
-          <div className="email-location">
-            <div className="email2">
-              <div className="email-icon">
-                <TfiEmail style={{ fontSize: "20px" }} />
-              </div>
 
-              <div style={{ paddingLeft: "20px", color: "white" }}>
-                <h5 style={{ color: "rgb(174, 176, 179)" }}>Email</h5>
-                <p>ak228308@gmail.com</p>
-              </div>
-            </div>
-          </div>
-          <div className="email-location">
-            <div className="email2">
-              <div className="email-icon">
-                <IoLocationOutline style={{ fontSize: "20px" }} />
-              </div>
-
-              <div style={{ paddingLeft: "20px", color: "white" }}>
-                <h5 style={{ color: "rgb(174, 176, 179)" }}>Location</h5>
-                <p>Mansarover Jaipur Rajasthan</p>
-              </div>
-            </div>
-          </div>
-        </div>
-        <div className="project2">
-          <img src={ProjectImage} />
-        </div>
-      </div>
       {/* //payment */}
       <div className="payment">
         <div className="payment-1">
@@ -361,36 +320,42 @@ const ServiceAll = () => {
       <div className="fst">
         <div className="first">
           <h1>Concept</h1>
-          <p>
+          <p style={{ paddingRight: "10px" }}>
             Nemo enim ipsam voluptatem voluptas sit aspernatur aut odit aut
             fugit
           </p>
           <li>Reviewing any existing branding</li>
           <li>Target audience and competitors research</li>
           <li>Developing a strategy</li>
-          <div className="span-p"></div>
+          <div className="span-p2">
+            <div className="span-p"></div>
+          </div>
         </div>
         <div className="second">
           <h1>Design</h1>
-          <p>
+          <p style={{ paddingRight: "10px" }}>
             Nemo enim ipsam voluptatem voluptas sit aspernatur aut odit aut
             fugit
           </p>
           <li>Developing wireframes and mockup</li>
           <li>Choosing typography, color palettes,</li>
           <li>Refining the design</li>
-          <div className="span-p"></div>
+          <div className="span-p2">
+            <div className="span-p"></div>
+          </div>
         </div>
         <div className="third">
           <h1>Webflow</h1>
-          <p>
+          <p style={{ paddingRight: "10px" }}>
             Nemo enim ipsam voluptatem voluptas sit aspernatur aut odit aut
             fugit
           </p>
           <li>Testing the website thoroughly launch</li>
           <li>Choosing typography, color palettes,</li>
           <li>Refining the design</li>
-          <div className="span-p"></div>
+          <div className="span-p2">
+            <div className="span-p"></div>
+          </div>
         </div>
       </div>
     </div>

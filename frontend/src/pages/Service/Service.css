@@ -220,7 +220,6 @@ li::marker {
   background-color: black;
   border-bottom-right-radius: 10px;
   border-top-left-radius: 10px;
-  margin-left: 359px;
 }
 .first:hover {
   border: 2px solid #c9f31d;

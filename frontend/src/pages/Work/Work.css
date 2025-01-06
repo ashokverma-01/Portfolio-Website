@@ -253,13 +253,15 @@
     height: 130px;
   }
 }
-/* Base styles */
+
 /* General styles */
 .project-b {
   width: 100%;
   height: 100vh;
   background-color: black;
   display: flex;
+  justify-content: space-between;
+  align-items: center;
   padding-top: 50px;
   padding-left: 50px;
   padding-right: 50px;
@@ -267,16 +269,24 @@
 
 .project1,
 .project2 {
-  width: 50%;
+  width: 48%;
   height: 90vh;
   background-color: rgb(25, 24, 24);
   border-radius: 10px;
+}
+.project1 {
+  padding-left: 40px;
 }
 
 .project2 {
   display: flex;
   align-items: center;
   justify-content: center;
+}
+.project2 img {
+  width: 100%;
+  height: 85vh;
+  object-fit: contain;
 }
 
 .together {
@@ -286,7 +296,7 @@
 }
 
 .email-location {
-  width: 100%;
+  width: 90%;
   height: 20%;
   padding-top: 50px;
 }
@@ -346,109 +356,61 @@
   align-items: center;
   justify-content: center;
 }
-
-/* Mobile responsive styles */
-@media screen and (max-width: 768px) {
+@media (max-width: 768px) {
   .project-b {
     flex-direction: column;
-    padding-left: 20px;
-    padding-right: 20px;
+    height: auto;
+    padding: 10px;
   }
 
   .project1,
   .project2 {
     width: 100%;
-    height: auto;
-    padding-left: 20px;
-    padding-right: 20px;
+    height: 48vh;
+    margin-bottom: 20px;
   }
 
-  .project2 {
-    display: block;
-    align-items: flex-start;
-    justify-content: flex-start;
+  .together {
+    flex-direction: column;
   }
 
   .email-location {
-    padding-top: 20px;
+    padding-top: 10px;
+    height: auto;
   }
 
   .one-two {
+    height: auto;
     padding-top: 10px;
-    width: 100%;
-  }
-
-  .one {
-    margin-top: 15px;
-    width: 80px;
-  }
-
-  .two {
-    margin-left: 10px;
   }
 
   .fixed h1 {
-    font-size: 30px;
-    margin-top: 20px;
-  }
-
-  .email2 {
-    flex-direction: column;
-    align-items: flex-start;
+    font-size: 40px;
+    text-align: center;
   }
 
   .email-icon {
     width: 40px;
     height: 40px;
   }
-
-  .project1 {
-    padding-bottom: 20px;
-  }
 }
 
-/* Extra small devices (mobile) */
-@media screen and (max-width: 480px) {
-  .project-b {
-    padding-top: 30px;
-    padding-left: 10px;
-    padding-right: 10px;
+@media (max-width: 480px) {
+  .fixed h1 {
+    font-size: 30px;
+  }
+
+  .email-location {
+    text-align: center;
+  }
+
+  .email-icon {
+    width: 30px;
+    height: 30px;
   }
 
   .project1,
   .project2 {
-    padding-left: 10px;
-    padding-right: 10px;
-  }
-
-  .email-location {
-    padding-top: 10px;
-  }
-
-  .fixed h1 {
-    font-size: 24px;
-    margin-top: 15px;
-  }
-
-  .email-icon {
-    width: 35px;
-    height: 35px;
-  }
-
-  .one {
-    width: 70px;
-  }
-
-  .two {
-    font-size: 14px;
-  }
-
-  .project1 {
-    padding-bottom: 15px;
-  }
-
-  .project2 img {
-    width: 100%;
-    height: auto;
+    height: 40vh;
   }
 }
