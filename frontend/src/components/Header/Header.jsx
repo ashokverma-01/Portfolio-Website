@@ -101,7 +101,7 @@ const Header = () => {
             </Link>
             <Link
               onClick={scrollToTop}
-              to="service"
+              to="serviceAll"
               className="navbar-brand"
               style={{ fontSize: "16px", color: "white" }}
               onMouseEnter={(e) => (e.target.style.color = "rgb(170, 211, 2)")}

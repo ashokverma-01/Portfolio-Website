@@ -188,36 +188,42 @@ const Service = () => {
       <div className="fst">
         <div className="first">
           <h1>Concept</h1>
-          <p>
+          <p style={{ paddingRight: "10px" }}>
             Nemo enim ipsam voluptatem voluptas sit aspernatur aut odit aut
             fugit
           </p>
           <li>Reviewing any existing branding</li>
           <li>Target audience and competitors research</li>
           <li>Developing a strategy</li>
-          <div className="span-p"></div>
+          <div className="span-p2">
+            <div className="span-p"></div>
+          </div>
         </div>
         <div className="second">
           <h1>Design</h1>
-          <p>
+          <p style={{ paddingRight: "10px" }}>
             Nemo enim ipsam voluptatem voluptas sit aspernatur aut odit aut
             fugit
           </p>
           <li>Developing wireframes and mockup</li>
           <li>Choosing typography, color palettes,</li>
           <li>Refining the design</li>
-          <div className="span-p"></div>
+          <div className="span-p2">
+            <div className="span-p"></div>
+          </div>
         </div>
         <div className="third">
           <h1>Webflow</h1>
-          <p>
+          <p style={{ paddingRight: "10px" }}>
             Nemo enim ipsam voluptatem voluptas sit aspernatur aut odit aut
             fugit
           </p>
           <li>Testing the website thoroughly launch</li>
           <li>Choosing typography, color palettes,</li>
           <li>Refining the design</li>
-          <div className="span-p"></div>
+          <div className="span-p2">
+            <div className="span-p"></div>
+          </div>
         </div>
       </div>
     </div>

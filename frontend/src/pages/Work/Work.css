@@ -413,4 +413,9 @@
   .project2 {
     height: 40vh;
   }
+  .project2 img {
+    width: 90%;
+    height: 35vh;
+    object-fit: contain;
+  }
 }

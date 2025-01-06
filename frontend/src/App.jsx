@@ -42,7 +42,7 @@ const App = () => {
             <Route path="/blog" element={<Blog />} />
             <Route path="/blog-detail" element={<BlogDetail />} />
             <Route path="/test" element={<Test />} />
-            <Route path="/service" element={<ServiceAll />} />
+            <Route path="/serviceAll" element={<ServiceAll />} />
           </Routes>
 
           <Footer />
