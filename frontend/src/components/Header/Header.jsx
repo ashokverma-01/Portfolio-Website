@@ -66,7 +66,7 @@ const Header = () => {
           </button>
           <form
             className={`d-flex gap-2 navbar-links ${
-              menuVisible ? "active" : ""
+              menuVisible ? "active" : "<IoMdClose/>"
             }`}
           >
             <Link

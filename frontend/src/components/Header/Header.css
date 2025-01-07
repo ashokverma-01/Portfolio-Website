@@ -206,8 +206,8 @@
     background: rgba(0, 0, 0, 0.9);
     position: absolute;
     top: 23px;
-    left: 240px;
-    width: 50%;
+    left: 138px;
+    width: 55%;
     height: 90vh;
     transform: translateY(-100%);
     transition: transform 0.3s ease-in-out;
