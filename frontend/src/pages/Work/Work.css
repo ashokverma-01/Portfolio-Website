@@ -399,7 +399,18 @@
   .fixed h1 {
     font-size: 30px;
   }
-
+  .together {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+  .one {
+    opacity: 0;
+  }
+  .two {
+    width: 50%;
+  }
   .email-location {
     text-align: center;
   }

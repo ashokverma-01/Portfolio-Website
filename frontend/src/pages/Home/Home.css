@@ -378,6 +378,18 @@ body {
     height: 30px;
     font-size: 25px;
   }
+  .modal-content {
+    position: relative;
+    background-color: white;
+    padding: 10px;
+    width: 80%;
+    max-width: 800px;
+    height: 500px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
+    text-align: center;
+    animation: scaleUp 0.3s ease-out;
+  }
 }
 /* model Video css */
 .modal {

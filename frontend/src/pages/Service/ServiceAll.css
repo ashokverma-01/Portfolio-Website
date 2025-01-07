@@ -245,6 +245,12 @@
   .payment-2 {
     width: 100%;
   }
+  .payment-1 {
+    color: white;
+  }
+  .payment-1:hover {
+    border-color: #c9f31d;
+  }
   .p-h h1 {
     font-size: 24px;
   }

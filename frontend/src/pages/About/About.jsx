@@ -102,20 +102,12 @@ const About = () => {
           <div className="page">
             <h1>
               I'm Ashok Verma, I'm a Brand & Webflow Designer, Currently
-              residing
-              <br />
-              <span>
-                in the lush Victoria Street London, Matias operates globally and
-                is
-              </span>
-              <br />
-              <div className="redy">
-                <span>ready to take on any design challenge.</span>
-              </div>
+              residing in the lush Victoria Street London, Matias operates
+              globally and is ready to take on any design challenge company.
             </h1>
           </div>
         </div>
-        <div className="btn-page">
+        <div className="btn-page-about">
           <button onClick={handleAboutClick}>ABOUT</button>
           <button onClick={handleExperienceClick}>EXPERIENCE</button>
           <button onClick={handleEducationClick}>EDUCATION</button>

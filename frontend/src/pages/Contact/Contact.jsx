@@ -30,10 +30,10 @@ const Contact = () => {
           "https://portfolio-website-74ap.onrender.com/api/users",
           values
         );
-        ShowToast("User Comment successfully", Severty.SUCCESS);
+        ShowToast("Comment successfully", Severty.SUCCESS);
         resetForm();
       } catch (error) {
-        ShowToast("Failed to Comment User", Severty.ERROR);
+        ShowToast("Failed to Commit", Severty.ERROR);
       }
     },
   });

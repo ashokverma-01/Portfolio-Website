@@ -56,7 +56,7 @@ const Footer = () => {
       <div className="last-footer">
         <div>
           <h5>
-            Copyright © 2023 <span style={{ color: "#c9f31d" }}>Ashok</span>.
+            Copyright © 2025 <span style={{ color: "#c9f31d" }}>Ashok</span>.
             All rights reserved.
           </h5>
         </div>
