@@ -536,3 +536,9 @@ body {
     font-size: 3rem;
   }
 }
+@media (min-width: 480px) {
+  #moving-text2 span {
+    font-weight: 600;
+    font-size: 40px;
+  }
+}
