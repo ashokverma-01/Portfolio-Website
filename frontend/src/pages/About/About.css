@@ -313,13 +313,9 @@
   }
   .btn-page-about {
     width: 100%;
-    display: block;
-    flex-direction: column;
+    display: flex;
+    flex-direction: row;
     align-items: center;
-
-    gap: 10px;
-  }
-  .btn-page-about button {
-    margin-left: 8px;
+    margin: 15px 0;
   }
 }
