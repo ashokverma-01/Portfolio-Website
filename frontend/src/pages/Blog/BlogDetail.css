@@ -430,5 +430,6 @@
   .commit-btn button {
     border: none;
     background: none;
+    color: black;
   }
 }

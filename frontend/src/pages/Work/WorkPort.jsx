@@ -367,7 +367,7 @@ const WorkPort = () => {
       <div className="fst">
         <div className="first">
           <h1>Concept</h1>
-          <p>
+          <p style={{ paddingRight: "10px" }}>
             Nemo enim ipsam voluptatem voluptas sit aspernatur aut odit aut
             fugit
           </p>
@@ -380,7 +380,7 @@ const WorkPort = () => {
         </div>
         <div className="second">
           <h1>Design</h1>
-          <p>
+          <p style={{ paddingRight: "10px" }}>
             Nemo enim ipsam voluptatem voluptas sit aspernatur aut odit aut
             fugit
           </p>
@@ -393,7 +393,7 @@ const WorkPort = () => {
         </div>
         <div className="third">
           <h1>Webflow</h1>
-          <p>
+          <p style={{ paddingRight: "10px" }}>
             Nemo enim ipsam voluptatem voluptas sit aspernatur aut odit aut
             fugit
           </p>
