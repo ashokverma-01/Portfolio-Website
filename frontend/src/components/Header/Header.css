@@ -184,6 +184,9 @@
     color: black;
     border: none;
   }
+  .navbar-brand a {
+    color: black;
+  }
 }
 
 /* General Styles */
@@ -245,5 +248,6 @@
   .navbar-brand {
     font-size: 18px;
     margin: 10px 0;
+    color: black;
   }
 }

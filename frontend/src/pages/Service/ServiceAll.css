@@ -245,6 +245,11 @@
   .payment-2 {
     width: 100%;
   }
+  .first,
+  .second,
+  .third {
+    height: 200px;
+  }
   .payment-1 {
     color: white;
   }
@@ -257,5 +262,9 @@
   .pay-btn button,
   .pay-btn2 button {
     font-size: 12px;
+  }
+  .span-p2 {
+    opacity: 0;
+    display: none;
   }
 }

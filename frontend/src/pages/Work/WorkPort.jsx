@@ -374,7 +374,9 @@ const WorkPort = () => {
           <li>Reviewing any existing branding</li>
           <li>Target audience and competitors research</li>
           <li>Developing a strategy</li>
-          <div className="span-p"></div>
+          <div className="span-p3">
+            <div className="span-p"></div>
+          </div>
         </div>
         <div className="second">
           <h1>Design</h1>
@@ -385,7 +387,9 @@ const WorkPort = () => {
           <li>Developing wireframes and mockup</li>
           <li>Choosing typography, color palettes,</li>
           <li>Refining the design</li>
-          <div className="span-p"></div>
+          <div className="span-p3">
+            <div className="span-p"></div>
+          </div>
         </div>
         <div className="third">
           <h1>Webflow</h1>
@@ -396,7 +400,9 @@ const WorkPort = () => {
           <li>Testing the website thoroughly launch</li>
           <li>Choosing typography, color palettes,</li>
           <li>Refining the design</li>
-          <div className="span-p"></div>
+          <div className="span-p3">
+            <div className="span-p"></div>
+          </div>
         </div>
       </div>
     </>

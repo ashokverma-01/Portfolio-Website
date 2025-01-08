@@ -216,7 +216,11 @@ li::marker {
   background-color: black;
   border-bottom-right-radius: 10px;
   border-top-left-radius: 10px;
-  margin-left: 359px;
+}
+.span-p3 {
+  width: 100%;
+  display: flex;
+  justify-content: right;
 }
 
 .first:hover,
@@ -232,7 +236,7 @@ li::marker {
 }
 
 /* Media Queries for Mobile Responsiveness */
-@media only screen and (max-width: 768px) {
+@media (max-width: 768px) {
   .portfolia h1 {
     font-size: 36px;
   }
@@ -296,9 +300,13 @@ li::marker {
     font-size: 18px;
     padding: 15px;
   }
+  .span-p3 {
+    display: flex;
+    justify-content: right;
+  }
 }
 
-@media only screen and (max-width: 480px) {
+@media (max-width: 480px) {
   .portfolia h1 {
     font-size: 28px;
   }
@@ -339,5 +347,9 @@ li::marker {
   .arrow-w button {
     font-size: 16px;
     padding: 10px;
+  }
+  .span-p3 {
+    opacity: 0;
+    display: none;
   }
 }

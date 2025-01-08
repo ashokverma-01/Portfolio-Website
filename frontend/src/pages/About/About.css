@@ -291,6 +291,12 @@
     width: 90%;
     height: 35%;
   }
+  .icon-about {
+    width: 100%;
+    justify-content: center;
+    display: flex;
+    align-items: center;
+  }
 }
 
 @media (max-width: 480px) {
@@ -344,5 +350,11 @@
   }
   .btn-page-about button {
     font-size: 10px;
+  }
+  .icon-about {
+    width: 100%;
+    justify-content: center;
+    display: flex;
+    align-items: center;
   }
 }
