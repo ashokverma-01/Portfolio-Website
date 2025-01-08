@@ -97,9 +97,8 @@
   margin-top: 60px;
   font-size: large;
 }
-.menu-toggle-btn {
-  opacity: 0;
-  overflow: hidden;
+.btn-light2 {
+  display: none;
 }
 
 /* Media Queries for Responsiveness */

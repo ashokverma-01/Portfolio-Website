@@ -4,7 +4,7 @@
   background-color: black;
   padding-top: 50px;
   justify-items: center;
-  display: block;
+  display: inline-block;
 }
 .icon-about {
   color: white;

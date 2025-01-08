@@ -308,8 +308,11 @@ li::marker {
   }
 
   .all-btn {
-    width: 100%;
+    width: 90%;
     flex-direction: column;
+  }
+  .port-btn {
+    border: none;
   }
 
   .p-images2 {

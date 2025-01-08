@@ -508,6 +508,9 @@ body {
     flex-wrap: wrap;
     gap: 10px;
   }
+  #moving-text2 span {
+    font-size: 30px;
+  }
 }
 
 /* 💻 Tablets */
