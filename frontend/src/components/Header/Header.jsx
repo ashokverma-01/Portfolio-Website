@@ -60,10 +60,7 @@ const Header = () => {
           >
             <img src={AVLOGO} className="logo" alt="Logo" />
           </Link>
-          {/* Mobile Menu Toggle Button */}
-          <button className="menu-toggle-btn" onClick={toggleMobileMenu}>
-            {menuVisible ? <IoMdClose /> : <SlMenu />}
-          </button>
+
           <form
             className={`d-flex gap-2 navbar-links ${
               menuVisible ? "active" : "<IoMdClose/>"
@@ -155,6 +152,14 @@ const Header = () => {
               type="button"
             >
               <SlMenu style={{ fontWeight: "bold" }} />
+            </button>
+            {/* Mobile Menu Toggle Button */}
+            <button className="btn btn-light2" onClick={toggleMobileMenu}>
+              {menuVisible ? (
+                <IoMdClose />
+              ) : (
+                <SlMenu style={{ fontWeight: "bold" }} />
+              )}
             </button>
           </div>
         </div>

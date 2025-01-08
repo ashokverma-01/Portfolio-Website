@@ -20,6 +20,7 @@ const Home = () => {
   const [isPlaying, setIsPlaying] = useState(false);
   const [isModalOpen, setIsModalOpen] = useState(false);
   const [currentVideoIndex, setCurrentVideoIndex] = useState(0);
+
   useEffect(() => {
     const mouseEffect = document.querySelector("#mouse-effect");
 
